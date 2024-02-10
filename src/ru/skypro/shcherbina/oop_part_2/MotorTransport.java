@@ -1,6 +1,6 @@
 package ru.skypro.shcherbina.oop_part_2;
 
-public class MotorTransport extends Transport {
+public  abstract class MotorTransport extends WheeledTransport {
     public MotorTransport(String modelName, int wheelsCount) {
         super(modelName, wheelsCount);
     }
@@ -9,4 +9,9 @@ public class MotorTransport extends Transport {
         System.out.println("Проверяем двигатель");
     }
 
+    @Override
+    public void service(){
+        super.service();
+        checkEngine();
+    }
 }

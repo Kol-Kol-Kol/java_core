@@ -1,6 +1,6 @@
 package ru.skypro.shcherbina.oop_part_2;
 
-public class Bicycle extends Transport {
+public class Bicycle extends WheeledTransport {
 
 
     public Bicycle(String modelName, int wheelsCount) {
